@@ -67,10 +67,10 @@
 //
 
 // synopsys translate_off
-`include "timescale.v"
+`include "timescale.sv"
 // synopsys translate_on
 
-`include "i2c_master_defines.v"
+`include "i2c_master_defines.sv"
 
 module i2c_master_byte_ctrl (
 	clk, rst, nReset, ena, clk_cnt, start, stop, read, write, ack_in, din,

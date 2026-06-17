@@ -17,10 +17,10 @@ set_app_var search_path [concat [list . [pwd]] $search_path]
 file mkdir WORK
 define_design_lib WORK -path ./WORK
 
-analyze -format verilog {
-    ./i2c_master_bit_ctrl.v
-    ./i2c_master_byte_ctrl.v
-    ./i2c_master_top.v
+analyze -format sverilog {
+    ./i2c_master_bit_ctrl.sv
+    ./i2c_master_byte_ctrl.sv
+    ./i2c_master_top.sv
 }
 
 elaborate $DESIGN_NAME
