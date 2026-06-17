@@ -1,3 +1,5 @@
+set target_library tsl18fs120_typ.db
+set link_library "* tsl18fs120_typ.db"
 read_file -format sverilog {timescale.sv i2c_master_defines.v i2c_master_bit_ctrl.v i2c_master_byte_ctrl.v i2c_master_top.sv}
 current_design i2c_master_top
 change_selection [get_ports wb_clk_i]
