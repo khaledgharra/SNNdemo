@@ -238,7 +238,7 @@ module i2c_master_byte_ctrl
 	//
 	// state machine
 	//
-    reg [9:0] 	c_state; // synopsys enum_state
+    reg [9:0] 	c_state;
 
 
 
