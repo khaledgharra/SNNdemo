@@ -70,7 +70,7 @@
 //
 
 // synopsys translate_off
-`include "timescale.sv"
+`include "timescale.v"
 // synopsys translate_on
 
 `include "i2c_master_defines.v"
@@ -255,7 +255,9 @@ module i2c_master_top(
 		.scl_oen  ( scl_padoen_o ),
 		.sda_i    ( sda_pad_i    ),
 		.sda_o    ( sda_pad_o    ),
-		.sda_oen  ( sda_padoen_o )
+		.sda_oen  ( sda_padoen_o ),
+		.VDD      (VDD),
+		.VSS      (VSS)
 	);
 
 	// status register block + interrupt request signal
